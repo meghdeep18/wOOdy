@@ -23,7 +23,7 @@ function Header() {
                 <NavLink to="/quote" className="dropdown-item">Free Quote</NavLink>
                 <NavLink to="/team" className="dropdown-item">Our Team</NavLink>
                 <NavLink to="/testimonial" className="dropdown-item">Testimonial</NavLink>
-                <NavLink to="/profile" className="dropdown-item">Profile</NavLink>
+                <NavLink to="/p rofile" className="dropdown-item">Profile</NavLink>
 
                 <NavLink to="/404" className="dropdown-item">404 Page</NavLink>
               </div>

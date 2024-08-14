@@ -23,13 +23,7 @@ import axios from 'axios';
 
 
 
-function App() {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-Axios =  axios.get('http://127.0.0.1:8000/api/Master/')
-        .then(response => setData(response.data))
-        .catch(error => console.error('Error fetching data:', error));
-}, []);
+
   return (
 
   
@@ -55,5 +49,5 @@ Axios =  axios.get('http://127.0.0.1:8000/api/Master/')
     </Routes>
 
   );
-}
+
 export default App;

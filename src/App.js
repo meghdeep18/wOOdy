@@ -18,15 +18,13 @@ import Contact from './Pages/Contact';
 import Login_page from './Pages/Login_page';
 import Signup_page from './Pages/Signup_page';
 import Profile from './Pages/Profile';
-import Edit_profile from './Pages/Edit_profile';
+import EditProfile from './Pages/EditProfile';
 import axios from 'axios';
 
 
 
-
+function App() {
   return (
-
-  
     <Routes>
       <Route path="/" index element={<><Header/><Index/><Footer/></>}/><Route/>
       <Route path="/about" element={<><Header/><About/><Footer/></>}/><Route/>
@@ -38,7 +36,7 @@ import axios from 'axios';
       <Route path="/testimonial" element={<><Header/><Testimonial/><Footer/></>}/><Route/>
       <Route path="/contact" element={<><Header/><Contact/><Footer/></>}/><Route/>
       <Route path="/profile" element={<><Header/><Profile/><Footer/></>}/><Route/>
-      <Route path="/edit_profile" element={<><Header/><Edit_profile/><Footer/></>}/><Route/>
+      <Route path="/EditProfile" element={<><Header/><EditProfile/><Footer/></>}/><Route/>
 
       
 
@@ -49,5 +47,6 @@ import axios from 'axios';
     </Routes>
 
   );
+}
 
 export default App;

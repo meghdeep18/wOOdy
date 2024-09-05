@@ -3,7 +3,7 @@ import React,{useState,useEffect} from 'react'
 import { Link, useParams ,useNavigate} from 'react-router-dom'
 import { toast } from 'react-toastify';
 
-function Edit_profile() {
+function EditProfile() {
 
   const redirect=useNavigate();
   useEffect(()=>{
@@ -35,25 +35,24 @@ function Edit_profile() {
 
 const validation=()=>{
   var result=true;
-  if(formvalue.name=="" || formvalue.name==null)
+  if(formvalue.name==="" || formvalue.name===null)
   {
     result=false;
     toast.error('Name Field is required !');
     return false;
   }
-  if(formvalue.email=="" || formvalue.email==null)
+  if(formvalue.email==="" || formvalue.email===null)
   {
     result=false;
     toast.error('Email Field is required !');
     return false;
   }
-  if(formvalue.password=="" || formvalue.password==null)
+  if(formvalue.password==="" || formvalue.password===null)
   {
     result=false;
     toast.error('Password Field is required !');
     return false;
   }
-  if(formvalue.mobile=="" || formvalue.mobile==null)
   {
     result=false;
     toast.error('Mobile Field is required !');
@@ -201,4 +200,4 @@ const onsubmit=async(e)=>{
   )
 }
 
-export default Edit_profile
+export default EditProfile
